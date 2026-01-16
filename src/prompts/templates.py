@@ -1,6 +1,6 @@
 from langchain_core.prompts import PromptTemplate
 
-mcq_prompt_template = PromptTemplate(
+mcq_prompt_template =  PromptTemplate(
     template=(
         "Generate a {difficulty} multiple-choice question about {topic}.\n\n"
         "Return ONLY a JSON object with these exact fields:\n"
