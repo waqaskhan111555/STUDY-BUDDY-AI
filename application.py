@@ -23,7 +23,7 @@ def main():
         
 
     st.title("Study Buddy AI NEW")
-
+ 
     st.sidebar.header("Quiz Settings")
 
     question_type = st.sidebar.selectbox(
