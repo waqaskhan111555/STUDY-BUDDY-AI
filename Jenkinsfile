@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Checking out code from GitHub...'
                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/waqaskhan111555/STUDY-BUDDY-AI.git']])
+              
             }
         }        
         stage('Build Docker Image') {
@@ -74,7 +75,7 @@ pipeline {
         //         script {
         //             kubeconfig(credentialsId: 'kubeconfig', serverUrl: 'https://192.168.49.2:8443') {
         //                 sh '''
-        //                 argocd login 34.45.193.5:31704 --username admin --password $(kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d) --insecure
+        //                 argocd login 136.115.224.5:31704 --username admin --password $(kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d) --insecure
         //                 argocd app sync study
         //                 '''
         //             }
