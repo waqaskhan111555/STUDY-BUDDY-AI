@@ -19,7 +19,7 @@ def main():
         st.session_state.quiz_submitted = False
 
     if 'rerun_trigger'not in st.session_state:
-        st.session_state.rerun_trigger = False
+        st.session_state.rerun_trigger = False 
         
 
     st.title("Study Buddy AI NEW")
